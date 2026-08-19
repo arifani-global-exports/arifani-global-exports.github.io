@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>Arifani Investments Exports — Horticulture, Essential Oils & Commodity Exports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --loam:#1E2A1F;
+    --loam-deep:#141C15;
+    --parchment:#F2ECDD;
+    --parchment-dim:#E7DFC9;
+    --gold:#C6912F;
+    --clay:#A8512F;
+    --sage:#8A9A79;
+    --ink:#1B1B16;
+    --paper-line: rgba(27,27,22,0.14);
+    --hair: rgba(242,236,221,0.16);
+    --shadow: 0 20px 50px rgba(20,28,21,0.25);
+    --ease: cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--parchment);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:currentColor;opacity:.6;}
+  :focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+  /* ---------- NAV ---------- */
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:rgba(30,42,31,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--hair);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;
+    max-width:1180px;margin:0 auto;
+    color:var(--parchment);
+  }
+  .wordmark{font-family:'Fraunces',serif;font-weight:600;font-size:19px;letter-spacing:.01em;display:flex;align-items:center;gap:10px;}
+  .wordmark .amp{color:var(--gold);font-style:italic;}
+  .wordmark .logo-mark{width:34px;height:34px;flex-shrink:0;}
+  .wordmark .lockup{display:flex;flex-direction:column;line-height:1.1;}
+  .wordmark .lockup .sub{font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:8px;letter-spacing:.14em;color:var(--gold);margin-top:3px;white-space:nowrap;}
+  .nav-links{display:flex;gap:30px;align-items:center;font-size:14px;}
+  .nav-links a{opacity:.82;transition:opacity .2s;position:relative;}
+  .nav-links a:hover{opacity:1;}
+  .nav-cta{
+    font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.03em;
+    background:var(--gold);color:var(--loam-deep);padding:10px 18px;border-radius:2px;
+    transition:transform .2s var(--ease), background .2s;
+  }
+  .nav-cta:hover{transform:translateY(-2px); background:#D9A244;}
+  .burger{display:none;background:none;border:1px solid var(--hair);color:var(--parchment);width:40px;height:40px;border-radius:2px;cursor:pointer;}
+  @media (max-width:860px){
+    .nav-links{position:fixed;inset:64px 0 auto 0;background:var(--loam);flex-direction:column;padding:20px 24px 26px;gap:18px;align-items:flex-start;border-bottom:1px solid var(--hair);transform:translateY(-8px);opacity:0;pointer-events:none;transition:all .25s var(--ease);}
+    .nav-links.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+    .burger{display:block;}
+    .nav-cta{display:none;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse at 78% -10%, rgba(198,145,47,0.18), transparent 55%),
+      linear-gradient(180deg,var(--loam) 0%, var(--loam-deep) 100%);
+    color:var(--parchment);
+    padding:88px 0 60px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background-image:radial-gradient(circle at 1px 1px, rgba(242,236,221,0.06) 1px, transparent 0);
+    background-size:26px 26px;
+    pointer-events:none;
+  }
+  .hero-inner{position:relative;z-index:1;}
+  .hero .eyebrow{color:var(--sage);margin-bottom:22px;}
+  .hero h1{
+    font-size:clamp(34px,6.4vw,64px);
+    line-height:1.04;
+    max-width:15ch;
+  }
+  .hero h1 em{font-style:italic;color:var(--gold);font-weight:400;}
+  .hero p.lede{
+    max-width:46ch;margin-top:22px;font-size:17px;color:rgba(242,236,221,0.78);
+  }
+  .hero-actions{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+  .btn{
+    font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.03em;
+    padding:14px 22px;border-radius:2px;display:inline-flex;align-items:center;gap:8px;
+    transition:transform .2s var(--ease), background .2s, color .2s, border-color .2s;
+  }
+  .btn-primary{background:var(--gold);color:var(--loam-deep);}
+  .btn-primary:hover{transform:translateY(-2px);background:#D9A244;}
+  .btn-ghost{border:1px solid var(--hair);color:var(--parchment);}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px);}
+
+  /* ---------- MANIFEST (signature element) ---------- */
+  .manifest{
+    margin-top:56px;
+    background:var(--parchment);
+    color:var(--ink);
+    border-radius:3px;
+    box-shadow:var(--shadow);
+    position:relative;
+    display:grid;
+    grid-template-columns:1fr auto;
+    overflow:hidden;
+  }
+  .manifest::before{ /* perforation */
+    content:"";position:absolute;left:0;right:0;top:52px;
+    height:0;border-top:1px dashed var(--paper-line);
+  }
+  .manifest-head{
+    grid-column:1/-1;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:14px 22px;border-bottom:1px solid var(--paper-line);
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.6;
+  }
+  .manifest-body{padding:26px 22px 22px;display:grid;grid-template-columns:repeat(4,1fr);gap:22px 18px;}
+  .manifest-field .k{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;opacity:.55;margin-bottom:6px;}
+  .manifest-field .v{font-family:'Fraunces',serif;font-size:19px;font-weight:500;transition:opacity .25s;}
+  .manifest-field .v.mono-v{font-family:'IBM Plex Mono',monospace;font-size:15px;}
+  .stamp{
+    align-self:center;justify-self:end;margin:0 22px;
+    width:76px;height:76px;border-radius:50%;
+    border:2px solid var(--clay);color:var(--clay);
+    display:flex;align-items:center;justify-content:center;
+    transform:rotate(-14deg);
+    position:relative;
+  }
+  .stamp span{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-align:center;line-height:1.3;text-transform:uppercase;font-weight:500;}
+  @media (max-width:760px){
+    .manifest-body{grid-template-columns:1fr 1fr;}
+    .stamp{display:none;}
+  }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{padding:96px 0;}
+  .section-head{max-width:640px;margin-bottom:52px;}
+  .section-head .eyebrow{color:var(--clay);margin-bottom:14px;}
+  .section-head h2{font-size:clamp(26px,4vw,38px);line-height:1.15;}
+  .section-head p{margin-top:14px;color:#4A4A3E;font-size:16px;max-width:52ch;}
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease), transform .7s var(--ease);}
+  .reveal.in{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;} html{scroll-behavior:auto;}}
+
+  /* ---------- EXPORTS (cards) ---------- */
+  .exports-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--paper-line);border:1px solid var(--paper-line);}
+  .export-card{
+    background:var(--parchment);padding:32px 26px 28px;position:relative;overflow:hidden;
+    transition:background .3s;
+  }
+  .export-card:hover{background:#FBF8EF;}
+  .export-card .num{font-family:'IBM Plex Mono',monospace;font-size:12px;opacity:.5;}
+  .export-card h3{font-size:23px;margin-top:16px;}
+  .export-card p{color:#4A4A3E;font-size:14.5px;margin-top:10px;}
+  .export-card .hs{
+    margin-top:20px;padding-top:16px;border-top:1px solid var(--paper-line);
+    font-family:'IBM Plex Mono',monospace;font-size:11.5px;
+    display:flex;justify-content:space-between;color:#6b6b5a;
+    opacity:0;transform:translateY(6px);transition:all .3s var(--ease);
+  }
+  .export-card:hover .hs{opacity:1;transform:translateY(0);}
+  @media (max-width:960px){.exports-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:520px){.exports-grid{grid-template-columns:1fr;}}
+
+  /* ---------- FRUIT GALLERY ---------- */
+  .fruit-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .fruit-card{
+    position:relative;border-radius:3px;overflow:hidden;aspect-ratio:3/4;
+    box-shadow:0 10px 26px rgba(20,28,21,0.14);
+    background:var(--loam);
+  }
+  .fruit-card svg{width:100%;height:100%;display:block;transition:transform .5s var(--ease);}
+  .fruit-card:hover svg{transform:scale(1.06);}
+  .fruit-card .overlay{
+    position:absolute;inset:auto 0 0 0;padding:16px 14px 14px;
+    background:linear-gradient(0deg,rgba(20,28,21,0.88) 0%,rgba(20,28,21,0.0) 100%);
+    color:var(--parchment);
+  }
+  .fruit-card .overlay .name{font-family:'Fraunces',serif;font-size:17px;font-weight:500;}
+  .fruit-card .overlay .meta{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:var(--sage);margin-top:4px;text-transform:uppercase;}
+  @media (max-width:860px){.fruit-gallery{grid-template-columns:1fr 1fr;}}
+  @media (max-width:480px){.fruit-gallery{grid-template-columns:1fr 1fr;gap:10px;}}
+
+  /* ---------- ORIGIN SELECTOR (interactive) ---------- */
+  .origin-block{
+    background:var(--loam);color:var(--parchment);border-radius:3px;overflow:hidden;
+    display:grid;grid-template-columns:280px 1fr;
+  }
+  .origin-list{border-right:1px solid var(--hair);}
+  .origin-item{
+    width:100%;text-align:left;padding:18px 22px;border-bottom:1px solid var(--hair);
+    background:none;color:var(--parchment);cursor:pointer;font-family:'Inter',sans-serif;
+    display:flex;justify-content:space-between;align-items:center;gap:10px;
+    transition:background .2s;
+  }
+  .origin-item .country{font-family:'Fraunces',serif;font-size:17px;}
+  .origin-item .cat{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);}
+  .origin-item:hover{background:rgba(242,236,221,0.05);}
+  .origin-item.active{background:rgba(198,145,47,0.14);}
+  .origin-item.active .country{color:var(--gold);}
+  .origin-detail{padding:38px 34px;}
+  .origin-detail .region-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);}
+  .origin-detail h3{font-size:clamp(24px,3.4vw,34px);margin-top:12px;}
+  .origin-detail p.desc{color:rgba(242,236,221,0.72);margin-top:14px;max-width:56ch;font-size:15px;}
+  .origin-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;}
+  .origin-stats .k{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:6px;}
+  .origin-stats .v{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--parchment);}
+  @media (max-width:760px){
+    .origin-block{grid-template-columns:1fr;}
+    .origin-list{display:flex;overflow-x:auto;border-right:none;border-bottom:1px solid var(--hair);}
+    .origin-item{border-bottom:none;border-right:1px solid var(--hair);flex-shrink:0;}
+    .origin-stats{grid-template-columns:1fr 1fr;}
+  }
+
+  /* ---------- WHY / MISSION-VISION ---------- */
+  .why{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+  .why-copy h2{font-size:clamp(26px,4vw,40px);line-height:1.18;max-width:14ch;}
+  .why-copy h2 em{color:var(--clay);font-style:italic;}
+  .why-copy p{margin-top:18px;color:#4A4A3E;max-width:48ch;}
+  .why-cards{display:flex;flex-direction:column;gap:2px;}
+  .why-card{background:var(--parchment-dim);padding:26px 24px;border-left:3px solid var(--gold);}
+  .why-card:nth-child(2){border-left-color:var(--clay);}
+  .why-card .eyebrow{margin-bottom:10px;color:#6b6b5a;}
+  .why-card p{font-size:15px;color:#3c3c30;margin-top:8px;}
+  @media (max-width:860px){.why{grid-template-columns:1fr;gap:40px;}}
+
+  /* ---------- PROCESS (real sequence, numbering justified) ---------- */
+  .process{background:var(--parchment-dim);}
+  .process-list{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper-line);border:1px solid var(--paper-line);}
+  .process-step{background:var(--parchment-dim);padding:28px 22px;}
+  .process-step .step-num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--clay);}
+  .process-step h4{font-family:'Fraunces',serif;font-size:19px;margin-top:14px;font-weight:500;}
+  .process-step p{font-size:13.5px;color:#5a5a4c;margin-top:8px;}
+  @media (max-width:860px){.process-list{grid-template-columns:1fr 1fr;}}
+  @media (max-width:480px){.process-list{grid-template-columns:1fr;}}
+
+  /* ---------- CTA BAND ---------- */
+  .cta-band{
+    background:linear-gradient(120deg,var(--clay),#8C3F22);
+    color:var(--parchment);text-align:left;padding:70px 0;
+  }
+  .cta-inner{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;}
+  .cta-inner h2{font-size:clamp(24px,3.6vw,36px);max-width:16ch;line-height:1.15;}
+  .cta-inner .btn-primary{background:var(--parchment);color:var(--ink);}
+  .cta-inner .btn-primary:hover{background:#fff;}
+
+  /* ---------- DETAILS ACCORDION ---------- */
+  .details-section{background:var(--parchment);padding:64px 0 80px;}
+  .accordion{max-width:760px;}
+  .accordion-item{border:1px solid var(--paper-line);border-radius:3px;margin-bottom:14px;overflow:hidden;background:var(--parchment-dim);}
+  .accordion-btn{
+    width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding:20px 24px;background:none;border:none;cursor:pointer;text-align:left;
+    font-family:'Fraunces',serif;font-size:19px;font-weight:500;color:var(--ink);
+  }
+  .accordion-btn .tag{
+    font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--clay);display:block;margin-bottom:4px;font-weight:400;
+  }
+  .accordion-btn .chev{
+    font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--gold);flex-shrink:0;
+    transition:transform .3s var(--ease);
+  }
+  .accordion-btn[aria-expanded="true"] .chev{transform:rotate(180deg);}
+  .accordion-panel{
+    max-height:0;overflow:hidden;transition:max-height .35s var(--ease);
+  }
+  .accordion-panel-inner{padding:0 24px 24px;border-top:1px solid var(--paper-line);}
+  .detail-row{
+    display:flex;justify-content:space-between;gap:16px;padding:14px 0;
+    border-bottom:1px dashed var(--paper-line);
+  }
+  .detail-row:last-child{border-bottom:none;}
+  .detail-row .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6b6b5a;padding-top:2px;}
+  .detail-row .v{font-family:'IBM Plex Mono',monospace;font-size:14.5px;color:var(--ink);text-align:right;}
+  .detail-row .v a{color:var(--clay);border-bottom:1px solid transparent;transition:border-color .2s;}
+  .detail-row .v a:hover{border-color:var(--clay);}
+  .bank-note{
+    margin-top:16px;padding:14px 16px;background:rgba(198,145,47,0.1);border-left:3px solid var(--gold);
+    font-size:13px;color:#4A4A3E;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--loam-deep);color:rgba(242,236,221,0.62);padding:56px 0 30px;font-size:14px;}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;padding-bottom:36px;border-bottom:1px solid var(--hair);}
+  .footer-grid .wordmark{color:var(--parchment);margin-bottom:12px;}
+  .footer-grid p{max-width:32ch;font-size:13.5px;}
+  .footer-col h5{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--parchment);margin-bottom:14px;}
+  .footer-col a{display:block;padding:5px 0;transition:color .2s;}
+  .footer-col a:hover{color:var(--gold);}
+  .footer-bottom{display:flex;justify-content:space-between;padding-top:22px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;flex-wrap:wrap;gap:10px;}
+  @media (max-width:760px){.footer-grid{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="#top" class="wordmark">
+      <svg class="logo-mark" viewBox="0 0 40 40" role="img" aria-label="Arifani Exports monogram">
+        <circle cx="20" cy="20" r="18" fill="none" stroke="#C6912F" stroke-width="1.1"/>
+        <path d="M10 29 L20 10 L30 29" fill="none" stroke="#C6912F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="14.5" y1="22" x2="25.5" y2="22" stroke="#C6912F" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="20" cy="10" r="1.7" fill="#A8512F"/>
+      </svg>
+      <span class="lockup">ARIFANI<span class="sub">INVESTMENTS EXPORTS</span></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#exports">What We Export</a>
+      <a href="#fruit">Fresh Fruit</a>
+      <a href="#origins">Origins</a>
+      <a href="#why">Why Us</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">REQUEST A QUOTE</a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding-top:88px;">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">HARVEST TO HARBOR, DOCUMENTED IN FULL</div>
+      <h1>The export house behind horticulture, oils, and commodities moving from six origins to your dock.</h1>
+      <p class="lede">Arifani Investments Exports sources, grades, and ships fresh horticulture, distilled essential oils, and raw commodities for buyers who need clean paperwork as much as clean product.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Request a Quote →</a>
+        <a href="#origins" class="btn btn-ghost">Explore Our Origins</a>
+      </div>
+
+      <!-- SIGNATURE ELEMENT: the manifest -->
+      <div class="manifest reveal" id="manifestCard">
+        <div class="manifest-head">
+          <span>Export Manifest — Sample</span>
+          <span id="manifestId" class="mono">REF. AF-0417-KE</span>
+        </div>
+        <div class="manifest-body">
+          <div class="manifest-field"><div class="k">Commodity</div><div class="v" id="mCommodity">Cut Roses, Grade A</div></div>
+          <div class="manifest-field"><div class="k">Origin</div><div class="v" id="mOrigin">Naivasha, Kenya</div></div>
+          <div class="manifest-field"><div class="k">HS Code</div><div class="v mono-v" id="mHs">0603.11</div></div>
+          <div class="manifest-field"><div class="k">Incoterm</div><div class="v mono-v" id="mIncoterm">FCA JKIA</div></div>
+        </div>
+        <div class="stamp"><span>Export<br>Ready</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE EXPORT -->
+  <section id="exports">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">What We Export</div>
+        <h2>Three categories, one chain of custody from field to freight.</h2>
+        <p>Every lot moves under phytosanitary and quality documentation prepared before it reaches the airway bill.</p>
+      </div>
+      <div class="exports-grid reveal">
+        <div class="export-card">
+          <div class="num">01</div>
+          <h3>Horticulture</h3>
+          <p>Cut flowers, foliage, and live plants, cold-chained from farm to airside within hours of harvest.</p>
+          <div class="hs"><span>HS 0603 / 0602</span><span>48hr chain</span></div>
+        </div>
+        <div class="export-card">
+          <div class="num">02</div>
+          <h3>Essential Oils</h3>
+          <p>Steam-distilled and cold-pressed oils, batch-tested for purity with GC-MS reports on request.</p>
+          <div class="hs"><span>HS 3301</span><span>GC-MS verified</span></div>
+        </div>
+        <div class="export-card">
+          <div class="num">03</div>
+          <h3>Commodities</h3>
+          <p>Spices, pulses, oilseeds, and raw agri-goods, bagged and container-loaded to your spec.</p>
+          <div class="hs"><span>HS 0910 / 1207</span><span>FCL &amp; LCL</span></div>
+        </div>
+        <div class="export-card">
+          <div class="num">04</div>
+          <h3>Fresh Fruit</h3>
+          <p>Mangoes, avocados, pineapples, and citrus, harvested to ripeness curve and reefer-shipped.</p>
+          <div class="hs"><span>HS 0804 / 0603</span><span>Reefer 100%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRUIT GALLERY -->
+  <section id="fruit" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Fresh Fruit, By Origin</div>
+        <h2>Four fruit lines, each reefer-tracked from orchard to port.</h2>
+        <p>Picked to a ripeness window agreed with the buyer, palletized cold, and held in chain until the container seals.</p>
+      </div>
+      <div class="fruit-gallery reveal">
+        <div class="fruit-card">
+          <svg viewBox="0 0 300 400" role="img" aria-labelledby="t1">
+            <title id="t1">Illustration of a mango</title>
+            <rect width="300" height="400" fill="#F2ECDD"/>
+            <rect x="14" y="14" width="272" height="372" fill="none" stroke="#1B1B16" stroke-width="1" stroke-opacity="0.35"/>
+            <path d="M28 28 L28 46 M28 28 L46 28" stroke="#1B1B16" stroke-width="1.4" stroke-opacity="0.5" fill="none"/>
+            <path d="M272 28 L272 46 M272 28 L254 28" stroke="#1B1B16" stroke-width="1.4" stroke-opacity="0.5" fill="none"/>
+            <path d="M28 372 L28 354 M28 372 L46 372" stroke="#1B1B16" stroke-width="1.4" stroke-opacity="0.5" fill="none"/>
+            <path d="M272 372 L272 354 M272 372 L254 372" stroke="#1B1B16" stroke-width="1.4" stroke-opacity="0.5" fill="none"/>
+            <path d="M150 130 C205 130 232 185 214 245 C198 300 168 320 140 312 C104 302 82 258 92 205 C100 163 118 130 150 130 Z" fill="#C6912F" stroke="#1B1B16" stroke-width="2"/>
+            <path d="M150 130 C205 130 232 185 214 245 C205 272 190 292 172 302" fill="none" stroke="#A8512F" stroke-width="2" stroke-opacity="0.55"/>
+            <path d="M148 128 C138 108 140 90 156 74" fill="none" stroke="#1B1B16" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M156 74 C172 66 186 70 196 82 C182 86 168 84 156 74 Z" fill="#8A9A79" stroke="#1B1B16" stroke-width="1.6"/>
+            <text x="150" y="356" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.5" fill="#1B1B16" fill-opacity="0.55">MANGIFERA INDICA</text>
+          </svg>
+          <div class="overlay">
+            <div class="name">Mango</div>
+            <div class="meta">India · HS 0804.50</div>
+          </div>
+        </div>
+        <div class="fruit-card">
+          <svg viewBox="0 0 300 400" role="img" aria-labelledby="t2">
+            <title id="t2">Illustration of an avocado</title>
+            <rect width="300" height="400" fill="#1E2A1F"/>
+            <rect x="14" y="14" width="272" height="372" fill="none" stroke="#F2ECDD" stroke-width="1" stroke-opacity="0.25"/>
+            <path d="M28 28 L28 46 M28 28 L46 28" stroke="#F2ECDD" stroke-width="1.4" stroke-opacity="0.4" fill="none"/>
+            <path d="M272 28 L272 46 M272 28 L254 28" stroke="#F2ECDD" stroke-width="1.4" stroke-opacity="0.4" fill="none"/>
+            <path d="M28 372 L28 354 M28 372 L46 372" stroke="#F2ECDD" stroke-width="1.4" stroke-opacity="0.4" fill="none"/>
+            <path d="M272 372 L272 354 M272 372 L254 372" stroke="#F2ECDD" stroke-width="1.4" stroke-opacity="0.4" fill="none"/>
+            <path d="M150 110 C196 118 210 175 204 225 C198 285 178 316 150 316 C122 316 102 285 96 225 C90 175 104 118 150 110 Z" fill="#8A9A79" stroke="#F2ECDD" stroke-width="2"/>
+            <path d="M150 110 C150 110 150 110 150 110 L150 316" fill="none" stroke="#F2ECDD" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="2 5"/>
+            <path d="M150 130 C182 138 192 180 188 222 C184 270 168 296 150 296 L150 130 Z" fill="#C6912F" stroke="#F2ECDD" stroke-width="1.6"/>
+            <circle cx="164" cy="215" r="30" fill="#A8512F" stroke="#F2ECDD" stroke-width="1.6"/>
+            <path d="M150 108 C144 96 146 84 156 74" fill="none" stroke="#F2ECDD" stroke-width="2.2" stroke-linecap="round"/>
+            <text x="150" y="356" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.5" fill="#F2ECDD" fill-opacity="0.55">PERSEA AMERICANA</text>
+          </svg>
+          <div class="overlay">
+            <div class="name">Avocado</div>
+            <div class="meta">Kenya · HS 0804.40</div>
+          </div>
+        </div>
+        <div class="fruit-card">
+          <svg viewBox="0 0 300 400" role="img" aria-labelledby="t3">
+            <title id="t3">Illustration of a pineapple</title>
+            <rect width="300" height="400" fill="#F2ECDD"/>
+            <rect x="14" y="14" width="272" height="372" fill="none" stroke="#1B1B16" stroke-width="1" stroke-opacity="0.35"/>
+            <path d="M28 28 L28 46 M28 28 L46 28" stroke="#1B1B16" stroke-width="1.4" stroke-opacity="0.5" fill="none"/>
+            <path d="M272 28 L272 46 M272 28 L254 28" stroke="#1B1B16" stroke-width="1.4" stroke-opacity="0.5" fill="none"/>
+            <path d="M28 372 L28 354 M28 372 L46 372" stroke="#1B1B16" stroke-width="1.4" stroke-opacity="0.5" fill="none"/>
+            <path d="M272 372 L272 354 M272 372 L254 372" stroke="#1B1B16" stroke-width="1.4" stroke-opacity="0.5" fill="none"/>
+            <path d="M108 165 Q150 145 192 165 L182 300 Q150 320 118 300 Z" fill="#C6912F" stroke="#1B1B16" stroke-width="2"/>
+            <path d="M108 165 L182 300 M120 158 L192 288 M96 190 L166 312 M192 165 L118 300 M180 158 L108 288 M204 190 L134 312" stroke="#A8512F" stroke-width="1.4" stroke-opacity="0.7"/>
+            <path d="M150 165 L128 95 M150 165 L150 84 M150 165 L172 95" fill="none" stroke="#8A9A79" stroke-width="5" stroke-linecap="round"/>
+            <path d="M150 165 L108 108 M150 165 L192 108" fill="none" stroke="#8A9A79" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+            <text x="150" y="356" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.5" fill="#1B1B16" fill-opacity="0.55">ANANAS COMOSUS</text>
+          </svg>
+          <div class="overlay">
+            <div class="name">Pineapple</div>
+            <div class="meta">Colombia · HS 0804.30</div>
+          </div>
+        </div>
+        <div class="fruit-card">
+          <svg viewBox="0 0 300 400" role="img" aria-labelledby="t4">
+            <title id="t4">Illustration of citrus fruit, whole and sliced</title>
+            <rect width="300" height="400" fill="#1E2A1F"/>
+            <rect x="14" y="14" width="272" height="372" fill="none" stroke="#F2ECDD" stroke-width="1" stroke-opacity="0.25"/>
+            <path d="M28 28 L28 46 M28 28 L46 28" stroke="#F2ECDD" stroke-width="1.4" stroke-opacity="0.4" fill="none"/>
+            <path d="M272 28 L272 46 M272 28 L254 28" stroke="#F2ECDD" stroke-width="1.4" stroke-opacity="0.4" fill="none"/>
+            <path d="M28 372 L28 354 M28 372 L46 372" stroke="#F2ECDD" stroke-width="1.4" stroke-opacity="0.4" fill="none"/>
+            <path d="M272 372 L272 354 M272 372 L254 372" stroke="#F2ECDD" stroke-width="1.4" stroke-opacity="0.4" fill="none"/>
+            <circle cx="112" cy="150" r="58" fill="#A8512F" stroke="#F2ECDD" stroke-width="2"/>
+            <path d="M112 92 C104 78 108 66 120 58" fill="none" stroke="#F2ECDD" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M120 58 C134 52 146 56 154 66 C142 70 130 68 120 58 Z" fill="#8A9A79" stroke="#F2ECDD" stroke-width="1.4"/>
+            <circle cx="172" cy="260" r="68" fill="#C6912F" stroke="#F2ECDD" stroke-width="2"/>
+            <circle cx="172" cy="260" r="52" fill="#F2ECDD" stroke="none"/>
+            <g stroke="#C6912F" stroke-width="2.4">
+              <line x1="172" y1="260" x2="172" y2="208"/>
+              <line x1="172" y1="260" x2="213" y2="235"/>
+              <line x1="172" y1="260" x2="213" y2="285"/>
+              <line x1="172" y1="260" x2="172" y2="312"/>
+              <line x1="172" y1="260" x2="131" y2="285"/>
+              <line x1="172" y1="260" x2="131" y2="235"/>
+            </g>
+            <circle cx="172" cy="260" r="52" fill="none" stroke="#F2ECDD" stroke-width="1" stroke-opacity="0.5"/>
+            <text x="150" y="356" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.5" fill="#F2ECDD" fill-opacity="0.55">CITRUS SINENSIS</text>
+          </svg>
+          <div class="overlay">
+            <div class="name">Citrus</div>
+            <div class="meta">Egypt · HS 0805.10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORIGINS (interactive selector) -->
+  <section id="origins" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Our Origins</div>
+        <h2>Six sourcing regions. Pick one to see what moves through it.</h2>
+      </div>
+      <div class="origin-block reveal">
+        <div class="origin-list" id="originList" role="tablist"></div>
+        <div class="origin-detail" id="originDetail"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WE DO IT -->
+  <section id="why">
+    <div class="wrap why">
+      <div class="why-copy reveal">
+        <div class="eyebrow" style="color:var(--clay);margin-bottom:16px;">Why We Do It</div>
+        <h2>Smallholders grow it. We make sure it <em>lands</em>.</h2>
+        <p>Most export failures aren't agricultural, they're administrative: a missing certificate, a misdeclared HS code, a cold chain broken at customs. We built Arifani Investments Exports to close that gap for growers and buyers who don't have a compliance department of their own.</p>
+      </div>
+      <div class="why-cards reveal">
+        <div class="why-card">
+          <div class="eyebrow">Our Mission</div>
+          <p>Move fresh and raw agricultural goods across borders without the shipment ever becoming the weak link in the trade.</p>
+        </div>
+        <div class="why-card">
+          <div class="eyebrow">Our Vision</div>
+          <p>A trade lane where a grower in Naivasha and a buyer in Rotterdam trust the same paperwork, the same cold chain, the same word.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">How A Shipment Moves</div>
+        <h2>Four stages, from the field to your customs desk.</h2>
+      </div>
+      <div class="process-list reveal">
+        <div class="process-step">
+          <div class="step-num">01 — Harvest</div>
+          <h4>Grade at source</h4>
+          <p>Product is graded and logged within hours of harvest or distillation, at the farm or press.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">02 — Quality Control</div>
+          <h4>Lab &amp; visual check</h4>
+          <p>Batch testing, moisture and purity checks, and phytosanitary inspection before packing.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">03 — Documentation</div>
+          <h4>Manifest &amp; certs</h4>
+          <p>HS classification, certificates of origin, and customs paperwork prepared ahead of pickup.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">04 — Freight</div>
+          <h4>Air, ocean, or road</h4>
+          <p>Booked against your Incoterm of choice, tracked door-to-door until proof of delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" id="contact" style="padding-top:70px;padding-bottom:70px;">
+    <div class="wrap cta-inner">
+      <h2>Ready to place your first order, or move your current supplier over?</h2>
+      <a href="mailto:Arifani.africa.inv@gmail.com" class="btn btn-primary">Talk to a Trade Consultant →</a>
+    </div>
+  </section>
+
+  <!-- DETAILS ACCORDION -->
+  <section class="details-section">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-bottom:32px;">
+        <div class="eyebrow">Business Details</div>
+        <h2 style="font-size:26px;">Contact &amp; payment information, on request.</h2>
+      </div>
+      <div class="accordion reveal">
+
+        <div class="accordion-item">
+          <button class="accordion-btn" id="contactBtn" aria-expanded="false" aria-controls="contactPanel">
+            <span><span class="tag">01 — Reach Us</span>Contact Details</span>
+            <span class="chev">▾</span>
+          </button>
+          <div class="accordion-panel" id="contactPanel">
+            <div class="accordion-panel-inner">
+              <div class="detail-row"><span class="k">Email</span><span class="v"><a href="mailto:Arifani.africa.inv@gmail.com">Arifani.africa.inv@gmail.com</a></span></div>
+              <div class="detail-row"><span class="k">WhatsApp / Phone</span><span class="v"><a href="https://wa.me/254735111375" target="_blank" rel="noopener">+254 735 111 375</a></span></div>
+              <div class="detail-row"><span class="k">Address</span><span class="v">P.O. Box 84462, Nkrumah Road, Mombasa, Kenya</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" id="bankBtn" aria-expanded="false" aria-controls="bankPanel">
+            <span><span class="tag">02 — Remit Payment</span>Bank Details</span>
+            <span class="chev">▾</span>
+          </button>
+          <div class="accordion-panel" id="bankPanel">
+            <div class="accordion-panel-inner">
+              <div class="detail-row"><span class="k">Bank</span><span class="v">NCBA Bank Kenya</span></div>
+              <div class="detail-row"><span class="k">Branch</span><span class="v">Nkrumah Road, Mombasa</span></div>
+              <div class="detail-row"><span class="k">SWIFT Code</span><span class="v">CBAFKENXXXX</span></div>
+              <div class="bank-note">Account number provided directly by our trade team upon order confirmation.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="wordmark">
+          <svg class="logo-mark" viewBox="0 0 40 40" role="img" aria-label="Arifani Exports monogram">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="#C6912F" stroke-width="1.1"/>
+            <path d="M10 29 L20 10 L30 29" fill="none" stroke="#C6912F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="14.5" y1="22" x2="25.5" y2="22" stroke="#C6912F" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="10" r="1.7" fill="#A8512F"/>
+          </svg>
+          <span class="lockup">ARIFANI<span class="sub">INVESTMENTS EXPORTS</span></span>
+        </div>
+        <p>Export house for horticulture, essential oils, and raw commodities, sourcing across six origin regions and shipping worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#why">Why We Do It</a>
+        <a href="#process">Our Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Export</h5>
+        <a href="#exports">Horticulture</a>
+        <a href="#exports">Essential Oils</a>
+        <a href="#exports">Commodities</a>
+      </div>
+      <div class="footer-col">
+        <h5>Origins</h5>
+        <a href="#origins">Kenya</a>
+        <a href="#origins">Madagascar</a>
+        <a href="#origins">Colombia</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Arifani Investments Exports Ltd.</span>
+      <span>All shipments documented under IATA / FIATA standards</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+    burger.textContent = open ? '✕' : '☰';
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open'); burger.textContent = '☰'; burger.setAttribute('aria-expanded','false');
+  }));
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.14 });
+  reveals.forEach(el => io.observe(el));
+
+  // Origin data + interactive selector
+  const origins = [
+    { country:"Kenya", region:"Rift Valley", cat:"Horticulture", ref:"AF-0417-KE",
+      commodity:"Cut Roses, Grade A", hs:"0603.11", incoterm:"FCA JKIA",
+      desc:"Naivasha's high-altitude lake basin gives our roses long vase life and deep color saturation, cut and airside within six hours.",
+      stats:[["Season","Year-round"],["Lead Time","24–48 hrs"],["Port","Nairobi JKIA"]] },
+    { country:"Ethiopia", region:"Oromia Highlands", cat:"Essential Oils", ref:"AF-1102-ET",
+      commodity:"Frankincense Oil, Steam-Distilled", hs:"3301.29", incoterm:"FOB Addis Ababa",
+      desc:"Wild-tapped Boswellia resin from highland cooperatives, distilled within the harvest window to preserve terpene profile.",
+      stats:[["Season","Oct – Mar"],["Purity","GC-MS tested"],["Port","Addis Ababa"]] },
+    { country:"Madagascar", region:"SAVA Region", cat:"Essential Oils", ref:"AF-0839-MG",
+      commodity:"Ylang-Ylang & Clove Bud Oil", hs:"3301.29", incoterm:"FOB Toamasina",
+      desc:"Small-lot distillation from the SAVA vanilla-and-clove belt, with fractional grading from Extra to Third for perfumery buyers.",
+      stats:[["Season","Jul – Oct"],["Grading","Extra – 3rd"],["Port","Toamasina"]] },
+    { country:"India", region:"Gujarat & Rajasthan", cat:"Commodities", ref:"AF-0275-IN",
+      commodity:"Cumin Seed & Turmeric Finger", hs:"0910.30", incoterm:"FOB Mundra",
+      desc:"Post-monsoon harvest from the Gujarat spice belt, cleaned, sorted, and container-loaded to buyer's moisture spec.",
+      stats:[["Season","Nov – Feb"],["Loading","FCL 20'/40'"],["Port","Mundra"]] },
+    { country:"Colombia", region:"Bogotá Savanna", cat:"Horticulture", ref:"AF-0561-CO",
+      commodity:"Carnations & Chrysanthemums", hs:"0603.12", incoterm:"FCA BOG",
+      desc:"Equatorial daylight and savanna elevation give year-round bloom cycles with minimal seasonal variance.",
+      stats:[["Season","Year-round"],["Lead Time","30–36 hrs"],["Port","Bogotá BOG"]] },
+    { country:"Egypt", region:"Nile Delta", cat:"Commodities", ref:"AF-0918-EG",
+      commodity:"Jasmine Absolute & Dried Herbs", hs:"1211.90", incoterm:"FOB Alexandria",
+      desc:"Nile Delta jasmine hand-picked before dawn for absolute extraction, alongside dried mint and chamomile lots.",
+      stats:[["Season","Jun – Sep"],["Extraction","Solvent absolute"],["Port","Alexandria"]] },
+  ];
+
+  const listEl = document.getElementById('originList');
+  const detailEl = document.getElementById('originDetail');
+
+  function renderDetail(o){
+    detailEl.innerHTML = `
+      <div class="region-tag">${o.region} · ${o.cat}</div>
+      <h3>${o.commodity}</h3>
+      <p class="desc">${o.desc}</p>
+      <div class="origin-stats">
+        ${o.stats.map(s => `<div><div class="k">${s[0]}</div><div class="v">${s[1]}</div></div>`).join('')}
+      </div>`;
+  }
+
+  function updateManifest(o){
+    document.getElementById('manifestId').textContent = 'REF. ' + o.ref;
+    document.getElementById('mCommodity').textContent = o.commodity;
+    document.getElementById('mOrigin').textContent = o.region + ', ' + o.country;
+    document.getElementById('mHs').textContent = o.hs;
+    document.getElementById('mIncoterm').textContent = o.incoterm;
+  }
+
+  origins.forEach((o, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'origin-item' + (i === 0 ? ' active' : '');
+    btn.setAttribute('role','tab');
+    btn.innerHTML = `<span class="country">${o.country}</span><span class="cat">${o.cat}</span>`;
+    btn.addEventListener('click', () => {
+      listEl.querySelectorAll('.origin-item').forEach(el => el.classList.remove('active'));
+      btn.classList.add('active');
+      renderDetail(o);
+      updateManifest(o);
+    });
+    listEl.appendChild(btn);
+  });
+
+  renderDetail(origins[0]);
+
+  // Accordion toggles (independent open/close)
+  document.querySelectorAll('.accordion-btn').forEach(btn => {
+    const panel = document.getElementById(btn.getAttribute('aria-controls'));
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      panel.style.maxHeight = isOpen ? '0px' : panel.scrollHeight + 'px';
+    });
+  });
+</script>
+</body>
+</html>
